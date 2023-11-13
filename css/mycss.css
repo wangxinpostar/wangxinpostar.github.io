@@ -3,16 +3,37 @@
     background: #000000;
 }
 
+/* 字体 */
 @font-face {
     font-family: 'STXINGKA';
     font-display: swap;
     src: url('/fonts/STFANGSO.TTF') format("truetype");
 }
 
-/* 文章页背景 */
-.layout_post>#post {
-    /* 以下代表透明度为0.5 可以自行修改*/
-    background: rgba(149, 210, 183, 0.85);
+/* 一级菜单居中 */
+#nav .menus_items {
+    /* display: inline; 这个带不带都可以，本来就是inline */
+    position: absolute;
+    width: -moz-fit-content;
+    /* Fix for Firefox */
+    width: fit-content;
+    left: 50%;
+    top: 50%;
+    /* 添加这一行 */
+    transform: translate(-50%, -50%);
+    /* 修改这一行 */
+}
+
+/* 去除导航栏选项中底下的蓝条 */
+#nav *::after {
+    background-color: transparent !important;
+}
+
+/* 导航栏菜单鼠标移入字体放大 */
+#nav #site-name:hover,
+#nav .menus_item:hover,
+#nav #search-button:hover {
+    font-size: 28px;
 }
 
 /* 所有页面背景 */
@@ -67,11 +88,11 @@
 }
 
 :root {
-    --global-font-size: 14px;
+    --global-font-size: 17px;
     --global-bg: #dedddd;
-    --font-color: #4c4948;
-    --hr-border: rgba(3, 171, 87, 0.7);
-    --hr-before-color: rgba(3, 171, 87, 0.7);
+    --font-color: #232108;
+    --hr-border: #ff7242;
+    --hr-before-color: #ff7242;
     --search-bg: #f6f8fa;
     --search-input-color: #4c4948;
     --search-a-color: #4c4948;
@@ -87,11 +108,11 @@
     --btn-hover-color: #ff7242;
     --btn-color: #fff;
     --btn-bg: #000000;
-    --text-bg-hover: rgba(0, 255, 106, 0.7);
+    --text-bg-hover: #ff7242;
     --light-grey: #eee;
     --dark-grey: #cacaca;
     --white: #fff;
-    --text-highlight-color: #000000;
+    --text-highlight-color: #290101;
     --blockquote-color: #6a737d;
     --blockquote-bg: rgba(73, 177, 245, 0.1);
     --reward-pop: #f5f5f5;
@@ -106,6 +127,19 @@
     --mark-bg: rgba(0, 0, 0, 0.3);
 }
 
+.article-sort-item-time {
+    color: #ab3b3b;
+    font-size: 95%;
+}
+
+#aside-content .aside-list>.aside-list-item .content>.title,
+#aside-content .aside-list>.aside-list-item .content>.comment {
+    color: var(--font-color);
+    font-size: 125%;
+    line-height: 1.5;
+    -webkit-line-clamp: 2;
+}
+
 #aside-content .card-tag-cloud a:hover,
 .site-data>a:hover div {
     color: #ff7242 !important;
@@ -116,7 +150,7 @@
 }
 
 #recent-posts>.recent-post-item>.recent-post-info>.article-title:hover {
-    color: rgb(73, 245, 125);
+    color: #ff7242;
 }
 
 #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap {
@@ -134,7 +168,7 @@
 #aside-content .aside-list>.aside-list-item .content>.comment:hover,
 #page-header.nav-fixed #nav a:hover,
 #page-header.nav-fixed #nav #toggle-menu:hover {
-    color: #1bef16;
+    color: #ff7242;
 }
 
 #content-inner.layout h1:hover,
