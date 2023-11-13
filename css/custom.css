@@ -127,7 +127,7 @@ h6::before {
 #content-inner.layout h4:hover,
 #content-inner.layout h5:hover,
 #content-inner.layout h6:hover {
-    color: #49b1f5;
+    color: #de3a3a;
 }
 
 #content-inner.layout h1:hover::before,
@@ -136,7 +136,7 @@ h6::before {
 #content-inner.layout h4:hover::before,
 #content-inner.layout h5:hover::before,
 #content-inner.layout h6:hover::before {
-    color: #49b1f5;
+    color: #de3a3a;
     -webkit-animation: ccc 3.2s linear infinite;
     animation: ccc 3.2s linear infinite;
 }
