@@ -10,6 +10,11 @@
     border-color: #6c8088 !important;
 }
 
+.v[data-class=v] .vtime,
+.v[data-class=v] .vsys {
+    color: #ffffff !important;
+}
+
 #post .tag_share .post-meta__tags {
     border: 1px solid #000000;
     border-radius: 12px;

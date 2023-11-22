@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Java面向对象面试题</title>
+    <url>/2023/09/03/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="Java语言有哪些特点？"><a href="#Java语言有哪些特点？" class="headerlink" title="Java语言有哪些特点？"></a>Java语言有哪些特点？</h2><ul>
+<li>面向对象（封装，继承，多态）；</li>
+<li>平台无关性，平台无关性的具体表现在于，Java 是“一次编写，到处运行（Write Once，Run any Where）”的语言，因此采用 Java 语言编写的程序具有很好的可移植性，而保证这一点的正是 Java 的虚拟机机制。在引入虚拟机之后，Java 语言在不同的平台上运行不需要重新编译。</li>
+<li>可靠性、安全性；</li>
+<li>支持多线程</li>
+<li>支持网络编程并且很方便。Java 语言诞生本身就是为简化网络编程设计的，因此 Java 语言不仅支持网络编程而且很方便；</li>
+<li>编译与解释并存</li>
+</ul>
+<h2 id="java面向对象的理解？面向对象的特征？"><a href="#java面向对象的理解？面向对象的特征？" class="headerlink" title="java面向对象的理解？面向对象的特征？"></a>java面向对象的理解？面向对象的特征？</h2><h3 id="面向对象的理解："><a href="#面向对象的理解：" class="headerlink" title="面向对象的理解："></a>面向对象的理解：</h3><p>在java中万事万物皆对象。类是对相同事物的一种抽象、是不可见的，对象具体的、可见的。由对象到类的过程是抽象的过程，由类到对象的过程是实例化的过程。</p>
+<h3 id="面向对象的特征："><a href="#面向对象的特征：" class="headerlink" title="面向对象的特征："></a>面向对象的特征：</h3><p><strong>封装</strong>：隐藏了类的内部实现机制，对外界而言它的内部细节是隐藏的，暴露给外界的只是它的访问方法。例如在属性的修饰符上我们往往用的private私有的，这样其它类要想访问就通过get和set方法。因此封装可以程序员按照既定的方式调用方法，不必关心方法的内部实现，便于使用； 便于修改，增强 代码的可维护性。<br><strong>继承</strong>：即常说的is-a关系。子类继承父类，表明子类是一种特殊的父类，并且具有父类所不具有的一些属性或方法。通过extends关键字来实现继承。Java中的继承是单继承，即一个子类只允许有一个父类。<br><strong>多态</strong>：是指的是首先两个类有继承关系，其次子类重写了父类的方法，最后父类引用指向子类对象。</p>
+<h2 id="Java中实现多态的机制是什么？"><a href="#Java中实现多态的机制是什么？" class="headerlink" title="Java中实现多态的机制是什么？"></a>Java中实现多态的机制是什么？</h2><p>Java中的多态靠的是父类或接口定义的引用变量可以指向子类或具体实现类的实例对象，而程 序调用的方法在运行期才动态绑定</p>
+<h2 id="构造方法有哪些特性？"><a href="#构造方法有哪些特性？" class="headerlink" title="构造方法有哪些特性？"></a>构造方法有哪些特性？</h2><ol>
+<li>名字与类名相同；</li>
+<li>没有返回值，但不能用void声明构造函数；</li>
+<li>生成类的对象时自动执行，无需调用。</li>
+</ol>
+<h2 id="构造器（constructor）是否可被重写（override）？"><a href="#构造器（constructor）是否可被重写（override）？" class="headerlink" title="构造器（constructor）是否可被重写（override）？"></a>构造器（constructor）是否可被重写（override）？</h2><p>构造器不能被继承，因此不能被重写，但可以被重载。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java语法面试题</title>
     <url>/2023/09/03/Java%E8%AF%AD%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
     <content><![CDATA[<h2 id="一个“-java”源文件中是否可以包含多个类（不是内部类）有什么限制"><a href="#一个“-java”源文件中是否可以包含多个类（不是内部类）有什么限制" class="headerlink" title="一个“.java”源文件中是否可以包含多个类（不是内部类）有什么限制?"></a>一个“.java”源文件中是否可以包含多个类（不是内部类）有什么限制?</h2><p>可以；必须只有一个<strong>public类名与文件名相同</strong>。</p>
@@ -89,34 +117,6 @@
 <h2 id="悲观锁和乐观锁的区别？"><a href="#悲观锁和乐观锁的区别？" class="headerlink" title="悲观锁和乐观锁的区别？"></a>悲观锁和乐观锁的区别？</h2><h3 id="悲观锁："><a href="#悲观锁：" class="headerlink" title="悲观锁："></a>悲观锁：</h3><p>每次去拿数据的时候都认为别人会修改，所以每次在拿数据的时候都会上锁，这样别人想拿这个数据都会block直到它拿到锁。因此，悲观锁需要耗时比较的多，跟乐观锁比较，悲观锁是有数据库自己实现的，用的时候我们直接调用数据的相关语句就可以。</p>
 <h3 id="乐观锁："><a href="#乐观锁：" class="headerlink" title="乐观锁："></a>乐观锁：</h3><p>用数据版本记录机制实现，这是乐观锁最常用的方式，所谓的数据版本，为数据增加一个版本号的字段，一般是通过为数据表增加一个数据类型的version字段实现，当读取数据时，将把二十年字段的值一同读取出来，数据每次更新都需要对version值加一，在我们提交更新的时候，判断数据表对应记录的当前版本信息与第一次取出来的version值进行对比，如果数据库的表当前版本号鱼取出来的version值相等，则给与更新否则认为过期数据不给与更新。</p>
 <h2 id="实践中如何优化MySQL？"><a href="#实践中如何优化MySQL？" class="headerlink" title="实践中如何优化MySQL？"></a>实践中如何优化MySQL？</h2><h3 id="SQL语句及索引的优化"><a href="#SQL语句及索引的优化" class="headerlink" title="SQL语句及索引的优化"></a>SQL语句及索引的优化</h3><h3 id="数据库表结构的优化"><a href="#数据库表结构的优化" class="headerlink" title="数据库表结构的优化"></a>数据库表结构的优化</h3><h3 id="系统配置的优化"><a href="#系统配置的优化" class="headerlink" title="系统配置的优化"></a>系统配置的优化</h3><h3 id="硬件的优化"><a href="#硬件的优化" class="headerlink" title="硬件的优化"></a>硬件的优化</h3><h2 id="货币字段用什么类型？"><a href="#货币字段用什么类型？" class="headerlink" title="货币字段用什么类型？"></a>货币字段用什么类型？</h2><h3 id="如果货币单位是分，可以是int类型；如果坚持用元，则要用decimal类型。"><a href="#如果货币单位是分，可以是int类型；如果坚持用元，则要用decimal类型。" class="headerlink" title="如果货币单位是分，可以是int类型；如果坚持用元，则要用decimal类型。"></a>如果货币单位是分，可以是int类型；如果坚持用元，则要用decimal类型。</h3><p>但是是不能用float和double类型的，因为这两个类型是以二进制存储的，会有一定的误差。比如float类型如果你insert一个1234567.23，查询出来的结果可能是1234567.25。</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>面试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java面向对象面试题</title>
-    <url>/2023/09/03/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="Java语言有哪些特点？"><a href="#Java语言有哪些特点？" class="headerlink" title="Java语言有哪些特点？"></a>Java语言有哪些特点？</h2><ul>
-<li>面向对象（封装，继承，多态）；</li>
-<li>平台无关性，平台无关性的具体表现在于，Java 是“一次编写，到处运行（Write Once，Run any Where）”的语言，因此采用 Java 语言编写的程序具有很好的可移植性，而保证这一点的正是 Java 的虚拟机机制。在引入虚拟机之后，Java 语言在不同的平台上运行不需要重新编译。</li>
-<li>可靠性、安全性；</li>
-<li>支持多线程</li>
-<li>支持网络编程并且很方便。Java 语言诞生本身就是为简化网络编程设计的，因此 Java 语言不仅支持网络编程而且很方便；</li>
-<li>编译与解释并存</li>
-</ul>
-<h2 id="java面向对象的理解？面向对象的特征？"><a href="#java面向对象的理解？面向对象的特征？" class="headerlink" title="java面向对象的理解？面向对象的特征？"></a>java面向对象的理解？面向对象的特征？</h2><h3 id="面向对象的理解："><a href="#面向对象的理解：" class="headerlink" title="面向对象的理解："></a>面向对象的理解：</h3><p>在java中万事万物皆对象。类是对相同事物的一种抽象、是不可见的，对象具体的、可见的。由对象到类的过程是抽象的过程，由类到对象的过程是实例化的过程。</p>
-<h3 id="面向对象的特征："><a href="#面向对象的特征：" class="headerlink" title="面向对象的特征："></a>面向对象的特征：</h3><p><strong>封装</strong>：隐藏了类的内部实现机制，对外界而言它的内部细节是隐藏的，暴露给外界的只是它的访问方法。例如在属性的修饰符上我们往往用的private私有的，这样其它类要想访问就通过get和set方法。因此封装可以程序员按照既定的方式调用方法，不必关心方法的内部实现，便于使用； 便于修改，增强 代码的可维护性。<br><strong>继承</strong>：即常说的is-a关系。子类继承父类，表明子类是一种特殊的父类，并且具有父类所不具有的一些属性或方法。通过extends关键字来实现继承。Java中的继承是单继承，即一个子类只允许有一个父类。<br><strong>多态</strong>：是指的是首先两个类有继承关系，其次子类重写了父类的方法，最后父类引用指向子类对象。</p>
-<h2 id="Java中实现多态的机制是什么？"><a href="#Java中实现多态的机制是什么？" class="headerlink" title="Java中实现多态的机制是什么？"></a>Java中实现多态的机制是什么？</h2><p>Java中的多态靠的是父类或接口定义的引用变量可以指向子类或具体实现类的实例对象，而程 序调用的方法在运行期才动态绑定</p>
-<h2 id="构造方法有哪些特性？"><a href="#构造方法有哪些特性？" class="headerlink" title="构造方法有哪些特性？"></a>构造方法有哪些特性？</h2><ol>
-<li>名字与类名相同；</li>
-<li>没有返回值，但不能用void声明构造函数；</li>
-<li>生成类的对象时自动执行，无需调用。</li>
-</ol>
-<h2 id="构造器（constructor）是否可被重写（override）？"><a href="#构造器（constructor）是否可被重写（override）？" class="headerlink" title="构造器（constructor）是否可被重写（override）？"></a>构造器（constructor）是否可被重写（override）？</h2><p>构造器不能被继承，因此不能被重写，但可以被重载。</p>
 ]]></content>
       <categories>
         <category>学习</category>
