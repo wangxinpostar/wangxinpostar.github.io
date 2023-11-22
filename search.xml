@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Java面向对象面试题</title>
+    <url>/2023/09/03/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="Java语言有哪些特点？"><a href="#Java语言有哪些特点？" class="headerlink" title="Java语言有哪些特点？"></a>Java语言有哪些特点？</h2><ul>
+<li>面向对象（封装，继承，多态）；</li>
+<li>平台无关性，平台无关性的具体表现在于，Java 是“一次编写，到处运行（Write Once，Run any Where）”的语言，因此采用 Java 语言编写的程序具有很好的可移植性，而保证这一点的正是 Java 的虚拟机机制。在引入虚拟机之后，Java 语言在不同的平台上运行不需要重新编译。</li>
+<li>可靠性、安全性；</li>
+<li>支持多线程</li>
+<li>支持网络编程并且很方便。Java 语言诞生本身就是为简化网络编程设计的，因此 Java 语言不仅支持网络编程而且很方便；</li>
+<li>编译与解释并存</li>
+</ul>
+<h2 id="java面向对象的理解？面向对象的特征？"><a href="#java面向对象的理解？面向对象的特征？" class="headerlink" title="java面向对象的理解？面向对象的特征？"></a>java面向对象的理解？面向对象的特征？</h2><h3 id="面向对象的理解："><a href="#面向对象的理解：" class="headerlink" title="面向对象的理解："></a>面向对象的理解：</h3><p>在java中万事万物皆对象。类是对相同事物的一种抽象、是不可见的，对象具体的、可见的。由对象到类的过程是抽象的过程，由类到对象的过程是实例化的过程。</p>
+<h3 id="面向对象的特征："><a href="#面向对象的特征：" class="headerlink" title="面向对象的特征："></a>面向对象的特征：</h3><p><strong>封装</strong>：隐藏了类的内部实现机制，对外界而言它的内部细节是隐藏的，暴露给外界的只是它的访问方法。例如在属性的修饰符上我们往往用的private私有的，这样其它类要想访问就通过get和set方法。因此封装可以程序员按照既定的方式调用方法，不必关心方法的内部实现，便于使用； 便于修改，增强 代码的可维护性。<br><strong>继承</strong>：即常说的is-a关系。子类继承父类，表明子类是一种特殊的父类，并且具有父类所不具有的一些属性或方法。通过extends关键字来实现继承。Java中的继承是单继承，即一个子类只允许有一个父类。<br><strong>多态</strong>：是指的是首先两个类有继承关系，其次子类重写了父类的方法，最后父类引用指向子类对象。</p>
+<h2 id="Java中实现多态的机制是什么？"><a href="#Java中实现多态的机制是什么？" class="headerlink" title="Java中实现多态的机制是什么？"></a>Java中实现多态的机制是什么？</h2><p>Java中的多态靠的是父类或接口定义的引用变量可以指向子类或具体实现类的实例对象，而程 序调用的方法在运行期才动态绑定</p>
+<h2 id="构造方法有哪些特性？"><a href="#构造方法有哪些特性？" class="headerlink" title="构造方法有哪些特性？"></a>构造方法有哪些特性？</h2><ol>
+<li>名字与类名相同；</li>
+<li>没有返回值，但不能用void声明构造函数；</li>
+<li>生成类的对象时自动执行，无需调用。</li>
+</ol>
+<h2 id="构造器（constructor）是否可被重写（override）？"><a href="#构造器（constructor）是否可被重写（override）？" class="headerlink" title="构造器（constructor）是否可被重写（override）？"></a>构造器（constructor）是否可被重写（override）？</h2><p>构造器不能被继承，因此不能被重写，但可以被重载。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java语法面试题</title>
     <url>/2023/09/03/Java%E8%AF%AD%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
     <content><![CDATA[<h2 id="一个“-java”源文件中是否可以包含多个类（不是内部类）有什么限制"><a href="#一个“-java”源文件中是否可以包含多个类（不是内部类）有什么限制" class="headerlink" title="一个“.java”源文件中是否可以包含多个类（不是内部类）有什么限制?"></a>一个“.java”源文件中是否可以包含多个类（不是内部类）有什么限制?</h2><p>可以；必须只有一个<strong>public类名与文件名相同</strong>。</p>
@@ -153,34 +181,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java面向对象面试题</title>
-    <url>/2023/09/03/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="Java语言有哪些特点？"><a href="#Java语言有哪些特点？" class="headerlink" title="Java语言有哪些特点？"></a>Java语言有哪些特点？</h2><ul>
-<li>面向对象（封装，继承，多态）；</li>
-<li>平台无关性，平台无关性的具体表现在于，Java 是“一次编写，到处运行（Write Once，Run any Where）”的语言，因此采用 Java 语言编写的程序具有很好的可移植性，而保证这一点的正是 Java 的虚拟机机制。在引入虚拟机之后，Java 语言在不同的平台上运行不需要重新编译。</li>
-<li>可靠性、安全性；</li>
-<li>支持多线程</li>
-<li>支持网络编程并且很方便。Java 语言诞生本身就是为简化网络编程设计的，因此 Java 语言不仅支持网络编程而且很方便；</li>
-<li>编译与解释并存</li>
-</ul>
-<h2 id="java面向对象的理解？面向对象的特征？"><a href="#java面向对象的理解？面向对象的特征？" class="headerlink" title="java面向对象的理解？面向对象的特征？"></a>java面向对象的理解？面向对象的特征？</h2><h3 id="面向对象的理解："><a href="#面向对象的理解：" class="headerlink" title="面向对象的理解："></a>面向对象的理解：</h3><p>在java中万事万物皆对象。类是对相同事物的一种抽象、是不可见的，对象具体的、可见的。由对象到类的过程是抽象的过程，由类到对象的过程是实例化的过程。</p>
-<h3 id="面向对象的特征："><a href="#面向对象的特征：" class="headerlink" title="面向对象的特征："></a>面向对象的特征：</h3><p><strong>封装</strong>：隐藏了类的内部实现机制，对外界而言它的内部细节是隐藏的，暴露给外界的只是它的访问方法。例如在属性的修饰符上我们往往用的private私有的，这样其它类要想访问就通过get和set方法。因此封装可以程序员按照既定的方式调用方法，不必关心方法的内部实现，便于使用； 便于修改，增强 代码的可维护性。<br><strong>继承</strong>：即常说的is-a关系。子类继承父类，表明子类是一种特殊的父类，并且具有父类所不具有的一些属性或方法。通过extends关键字来实现继承。Java中的继承是单继承，即一个子类只允许有一个父类。<br><strong>多态</strong>：是指的是首先两个类有继承关系，其次子类重写了父类的方法，最后父类引用指向子类对象。</p>
-<h2 id="Java中实现多态的机制是什么？"><a href="#Java中实现多态的机制是什么？" class="headerlink" title="Java中实现多态的机制是什么？"></a>Java中实现多态的机制是什么？</h2><p>Java中的多态靠的是父类或接口定义的引用变量可以指向子类或具体实现类的实例对象，而程 序调用的方法在运行期才动态绑定</p>
-<h2 id="构造方法有哪些特性？"><a href="#构造方法有哪些特性？" class="headerlink" title="构造方法有哪些特性？"></a>构造方法有哪些特性？</h2><ol>
-<li>名字与类名相同；</li>
-<li>没有返回值，但不能用void声明构造函数；</li>
-<li>生成类的对象时自动执行，无需调用。</li>
-</ol>
-<h2 id="构造器（constructor）是否可被重写（override）？"><a href="#构造器（constructor）是否可被重写（override）？" class="headerlink" title="构造器（constructor）是否可被重写（override）？"></a>构造器（constructor）是否可被重写（override）？</h2><p>构造器不能被继承，因此不能被重写，但可以被重载。</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>面试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>尚可点评</title>
     <url>/2023/09/26/%E9%BB%91%E9%A9%AC%E7%82%B9%E8%AF%84/</url>
     <content><![CDATA[<h1 id="高并发抢优惠卷"><a href="#高并发抢优惠卷" class="headerlink" title="高并发抢优惠卷"></a>高并发抢优惠卷</h1><h2 id="单体项目"><a href="#单体项目" class="headerlink" title="单体项目"></a>单体项目</h2><h3 id="乐观锁（超卖，基于CAS）"><a href="#乐观锁（超卖，基于CAS）" class="headerlink" title="乐观锁（超卖，基于CAS）"></a>乐观锁（超卖，基于<code>CAS</code>）</h3><p>在代码中静待获取库存<code>stock</code>并更新会导致并发时读取到脏数据，<code>Integer stock = voucher.getStock();</code>获取到库存量时在后面执行语句</p>
@@ -297,11 +297,7 @@
 
 <h2 id="用zset对点赞列表进行存储"><a href="#用zset对点赞列表进行存储" class="headerlink" title="用zset对点赞列表进行存储"></a>用zset对点赞列表进行存储</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">Long</span> <span class="variable">userId</span> <span class="operator">=</span> UserHolder.getUser().getId();</span><br><span class="line"><span class="type">String</span> <span class="variable">key</span> <span class="operator">=</span> RedisConstants.BLOG_LIKED_KEY + id;</span><br><span class="line"></span><br><span class="line"><span class="type">Double</span> <span class="variable">score</span> <span class="operator">=</span> redisTemplate.opsForZSet().score(key, userId.toString());</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (ObjectUtil.isNull(score)) &#123;</span><br><span class="line">    <span class="type">boolean</span> <span class="variable">isSuccess</span> <span class="operator">=</span> lambdaUpdate().setSql(<span class="string">&quot;liked = liked + 1&quot;</span>).eq(Blog::getId, id).update();</span><br><span class="line">    <span class="keyword">if</span> (isSuccess) &#123;</span><br><span class="line">        redisTemplate.opsForZSet().add(key, userId.toString(), System.currentTimeMillis());</span><br><span class="line">    &#125;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="type">boolean</span> <span class="variable">isSuccess</span> <span class="operator">=</span> lambdaUpdate().setSql(<span class="string">&quot;liked = liked - 1&quot;</span>).eq(Blog::getId, id).update();</span><br><span class="line">    <span class="keyword">if</span> (isSuccess) &#123;</span><br><span class="line">        redisTemplate.opsForZSet().remove(key, userId.toString());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="注意：sql语句的-list-in（…-…）查询出来的是后点赞的在前，先点赞的在后，需要我们自定义sql查询-用last最后一条sql语句，手写order-by的sql，具体代码如下"><a href="#注意：sql语句的-list-in（…-…）查询出来的是后点赞的在前，先点赞的在后，需要我们自定义sql查询-用last最后一条sql语句，手写order-by的sql，具体代码如下" class="headerlink" title="注意：sql语句的 list.in（…, …）查询出来的是后点赞的在前，先点赞的在后，需要我们自定义sql查询,用last最后一条sql语句，手写order by的sql，具体代码如下"></a><strong>注意：sql语句的 list.in（…, …）查询出来的是后点赞的在前，先点赞的在后，需要我们自定义sql查询,用last最后一条sql语句，手写order by的sql，具体代码如下</strong></h2> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">sql</span> <span class="operator">=</span> <span class="string">&quot;ORDER BY FIELD(id,&quot;</span> + StrUtil.join(<span class="string">&quot;,&quot;</span>, ids) + <span class="string">&quot;)&quot;</span>;</span><br><span class="line">List&lt;UserDTO&gt; userDTOS = userService.lambdaQuery()</span><br><span class="line">    .in(User::getId, ids).last(sql)</span><br><span class="line">    .list()</span><br><span class="line">    .stream().map(user -&gt; BeanUtil.copyProperties(user, UserDTO.class)).collect(Collectors.toList());</span><br></pre></td></tr></table></figure>
-
-<div class="commentbox"></div>
-<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-<script>commentBox('5685909190082560-proj')</script>]]></content>
+<h2 id="注意：sql语句的-list-in（…-…）查询出来的是后点赞的在前，先点赞的在后，需要我们自定义sql查询-用last最后一条sql语句，手写order-by的sql，具体代码如下"><a href="#注意：sql语句的-list-in（…-…）查询出来的是后点赞的在前，先点赞的在后，需要我们自定义sql查询-用last最后一条sql语句，手写order-by的sql，具体代码如下" class="headerlink" title="注意：sql语句的 list.in（…, …）查询出来的是后点赞的在前，先点赞的在后，需要我们自定义sql查询,用last最后一条sql语句，手写order by的sql，具体代码如下"></a><strong>注意：sql语句的 list.in（…, …）查询出来的是后点赞的在前，先点赞的在后，需要我们自定义sql查询,用last最后一条sql语句，手写order by的sql，具体代码如下</strong></h2> <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">sql</span> <span class="operator">=</span> <span class="string">&quot;ORDER BY FIELD(id,&quot;</span> + StrUtil.join(<span class="string">&quot;,&quot;</span>, ids) + <span class="string">&quot;)&quot;</span>;</span><br><span class="line">List&lt;UserDTO&gt; userDTOS = userService.lambdaQuery()</span><br><span class="line">    .in(User::getId, ids).last(sql)</span><br><span class="line">    .list()</span><br><span class="line">    .stream().map(user -&gt; BeanUtil.copyProperties(user, UserDTO.class)).collect(Collectors.toList());</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>学习</category>
       </categories>

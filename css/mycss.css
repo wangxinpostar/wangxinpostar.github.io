@@ -1,3 +1,25 @@
+.v[data-class=v] .vinput,
+.v[data-class=v] .veditor,
+.v[data-class=v] p,
+.v[data-class=v] pre code,
+.v[data-class=v] .status-bar {
+    color: #000000 !important;
+}
+
+.v[data-class=v] .vwrap {
+    border-color: #6c8088 !important;
+}
+
+#post .tag_share .post-meta__tags {
+    border: 1px solid #000000;
+    border-radius: 12px;
+    color: #de3a3a;
+}
+
+#aside-content #card-toc .toc-content .toc-link {
+    color: #000000;
+}
+
 .pace {
     -webkit-pointer-events: none;
     pointer-events: none;
