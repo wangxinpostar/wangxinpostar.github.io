@@ -6,13 +6,45 @@
     color: #000000 !important;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+#aside-content #card-toc .toc-percentage {
+    float: right;
+    margin-top: -9px;
+    color: #000000;
+    font-style: italic;
+    font-size: 140%;
+}
+
+#aside-content .aside-list>.aside-list-item .content>time,
+#aside-content .aside-list>.aside-list-item .content>.name {
+    display: block;
+    color: #000000;
+    font-size: 85%;
+}
+
 .v[data-class=v] .vwrap {
-    border-color: #6c8088 !important;
+    border-color: #000000 !important;
+}
+
+.v[data-class=v] .vempty {
+    padding: 1.25em;
+    text-align: center;
+    color: #000 !important;
+    overflow: auto;
+}
+
+.category-lists .category-list .category-list-count {
+    margin-left: 8px;
+    color: #000000;
 }
 
 .v[data-class=v] .vtime,
 .v[data-class=v] .vsys {
-    color: #ffffff !important;
+    color: #000000 !important;
 }
 
 #post .tag_share .post-meta__tags {
@@ -190,20 +222,6 @@
     background: rgba(255, 255, 255, 0.6) !important;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
     position: fixed;
-}
-
-/* 滚动条 */
-.aplayer .aplayer-list ol::-webkit-scrollbar {
-    width: 5px;
-}
-
-.aplayer .aplayer-list ol::-webkit-scrollbar-thumb {
-    border-radius: 3px;
-    background-color: var(--theme-color) !important;
-}
-
-.aplayer .aplayer-list ol::-webkit-scrollbar-thumb:hover {
-    background-color: var(--theme-color) !important;
 }
 
 /* 圆角 */
