@@ -2006,25 +2006,25 @@ span.temp {
 .parallax>use:nth-child(1) {
 	animation-delay: -2s;
 	animation-duration: 7s;
-	fill: #5fd9cfbd;
+	fill: #d9715fbd;
 }
 
 .parallax>use:nth-child(2) {
 	animation-delay: -3s;
 	animation-duration: 10s;
-	fill: #0cd4d482;
+	fill: #fad1d1;
 }
 
 .parallax>use:nth-child(3) {
 	animation-delay: -4s;
 	animation-duration: 13s;
-	fill: #3cefad36;
+	fill: #f7a5a5;
 }
 
 .parallax>use:nth-child(4) {
 	animation-delay: -5s;
 	animation-duration: 20s;
-	fill: #92efcb;
+	fill: rgb(218, 184, 184);
 }
 
 /* 黑色模式背景 */

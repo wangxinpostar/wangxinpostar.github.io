@@ -315,8 +315,18 @@
 .layout_post>#page,
 .layout_post>#post,
 .read-mode .layout_post>#post {
-    /* 以下代表透明度为0.5 */
-    background: rgba(149, 210, 183, 0.85);
+    /* 以下代表透明度为0.35 */
+    background: rgba(149, 210, 183, 0.35);
+}
+
+.cardHover,
+.error404 #error-wrap .error-content,
+.layout>div:first-child:not(.recent-posts),
+#recent-posts>.recent-post-item,
+#aside-content .card-widget,
+.layout>.recent-posts .pagination>*:not(.space) {
+    /* 以下代表透明度为0.35 */
+    background: rgba(149, 210, 183, 0.35);
 }
 
 /* 主页所有文章页面背景 */
@@ -326,32 +336,32 @@
 .layout_post>#page,
 .layout_post>#post,
 .read-mode .layout_post>#post {
-    /* 以下代表透明度为0.5 */
-    background: rgba(149, 210, 183, 0.85);
+    /* 以下代表透明度为0.35 */
+    background: rgba(149, 210, 183, 0.35);
 }
 
 /*侧边栏页面*/
 #aside-content>.card-widget {
-    background: rgba(149, 210, 183, 0.85);
+    background: rgba(149, 210, 183, 0.35);
 }
 
 #aside-content>.sticky_layout>.card-widget {
-    background: rgba(149, 210, 183, 0.85);
+    background: rgba(149, 210, 183, 0.35);
 }
 
 /*文章页面*/
 .layout>#post {
-    background: rgba(149, 210, 183, 0.85);
+    background: rgba(149, 210, 183, 0.35);
 }
 
 /*分类页面*/
 .layout>#page {
-    background: rgba(149, 210, 183, 0.85);
+    background: rgba(149, 210, 183, 0.35);
 }
 
 /*时间轴页面*/
 .layout>#archive {
-    background: rgba(149, 210, 183, 0.85);
+    background: rgba(149, 210, 183, 0.35);
 }
 
 #post .post-copyright .post-copyright-meta {
