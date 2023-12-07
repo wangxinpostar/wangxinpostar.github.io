@@ -6,6 +6,15 @@
     color: #000000 !important;
 }
 
+#article-container figure.highlight .gutter pre {
+    padding-right: 10px;
+    padding-left: 2px;
+}
+
+#article-container .highlight-tools {
+    height: 1.5em;
+}
+
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
